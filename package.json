@@ -1,0 +1,22 @@
+{
+  "name": "tech3bv2",
+  "version": "1.0.0",
+  "description": "Github feature eindproduct",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Timmhart/Tech3bv2.git"
+  },
+  "author": "Tim Hart",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Timmhart/Tech3bv2/issues"
+  },
+  "homepage": "https://github.com/Timmhart/Tech3bv2#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
