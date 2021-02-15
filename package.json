@@ -4,7 +4,8 @@
   "description": "Github feature eindproduct",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   "dependencies": {
     "camelcase": "^6.2.0",
     "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
     "lodash": "^4.17.20"
   },
   "devDependencies": {
