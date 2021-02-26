@@ -1,17 +1,18 @@
 const express = require('express');
-// const exphbs = require('express-handlebars');
+const ejs = require('ejs');
 const app = express();
-// const port = 3000;
+const port = 3000;
 
-// app.use('/static', express.static('public'));
-
-// app.engine('handlebars', exphbs());
-// app.set('view engine', 'handlebars');
+app.use('/static', express.static('public'));
 
 app.get('/', (req, res) => {
     res.send('hello world');
 });
 
-app.listen(3000, () => {
-    console.log('Express web app on localhost:3000');
+app.use(function (req, res, next) {
+    res.status(404).send("Sorry can't find that!")
+})
+
+app.listen(port, () => {
+    console.log(`Example app listening on port ${port}!`);
 });
