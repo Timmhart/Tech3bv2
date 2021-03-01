@@ -1,0 +1,45 @@
+body {
+    background-color: rgb(236, 234, 234);
+}
+
+header {
+    box-shadow: 3px 6px 30px -12px rgba(0,0,0,0.65);
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+
+header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+    text-align: center;
+    padding-bottom: 1em;
+    padding-top: .9em;
+}
+
+
+
+h1 {
+font-size: 1.5em;
+text-align: center;
+padding-top: 2em;
+font-family: 'Courier New', Courier, monospace;
+text-transform: uppercase;
+}
+
+h3 {
+    padding: 1em 0 0 1em;
+}
+
+div {
+    border: 1px solid black;
+    padding: 4em;
+    text-align: center;
+    margin: 2em;
+    padding-bottom: 6em;
+    border-radius: 3em;
+}
