@@ -41,7 +41,7 @@ Stap 3.
 verander de .env_example file naar .env
 **code**
 
-### Starten maar
+### Starten
 
 Start nu npm (Node package manager)
 ```js
