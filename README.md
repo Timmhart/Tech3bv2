@@ -7,13 +7,13 @@
 
 ## Table of Contents
 
-*
-*
-*
-*
-*
+* [Introductie](https://github.com/Timmhart/Tech3bv2#matching-app-project-warzone)
+* [Installatie](https://github.com/Timmhart/Tech3bv2#hoe-te-installeren)
+* [Features](https://github.com/Timmhart/Tech3bv2#features)
+* [License](https://github.com/Timmhart/Tech3bv2#license)
+* [Bronnen](https://github.com/Timmhart/Tech3bv2#bronnen)
 
-## Hoe te installeren en gebruiksklaar maken
+## Hoe te installeren
 
 ### Installatie
 
