@@ -4,7 +4,7 @@
   "description": "Github feature eindproduct",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "nodemon server.js",
     "test": "nodemon server.js"
   },
   "repository": {
