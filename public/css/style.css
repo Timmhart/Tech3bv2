@@ -9,6 +9,8 @@ body {
     color: rgb(25, 68, 25);
 }
 
+/* code nav + header  */
+
 header {
     box-shadow: 3px 6px 30px -12px rgba(0,0,0,0.25);
     width: 100%;
@@ -42,6 +44,13 @@ header section a img {
     border-radius: 50%;
 }
 
+header h2 {
+    position: relative;
+    transform: rotate(-5deg) translate(-60%, 65%);
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
 main {
     background-color: white;
     margin-top: 1em;
@@ -59,10 +68,12 @@ nav {
 
 nav img {
     width: 10%;
-    height: auto;
+    height: 7vh;
     margin: 1em 2em 1em 2em;
 }
 
+
+/* alles in de main  */
 h1 {
 font-size: 1.5em;
 text-align: center;
@@ -107,12 +118,113 @@ main section:nth-of-type(2) {
     margin: 0 5em;
 }
 
+/* css code voor het hartje */
+
+.heart {
+    position: relative;
+    margin: 20px;
+    height: 65px;
+    width: 50px;
+}
+
+.heart:before,
+.heart:after {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 40px;
+    background: green;
+    border-radius: 50px 50px 0 0;
+    margin-top: .5em;
+}
+
+.heart:before {
+left: 25px;
+
+-webkit-transform: rotate(-45deg);;
+transform: rotate(-45deg);
+
+transform-origin: 0 100%;
+-webkit-transform-origin: 0 100%;;
+}
+
+.heart:after {
+    left: 0;
+
+    -webkit-transform: rotate(45deg);;
+    transform: rotate(45deg);
+
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+}
+
+/* css code voor de kruis */
+
+.cross {
+    position: relative;
+    margin: 20px 20px 20px 160px;
+    height: 85px;
+    width: 100px;
+}
+
+.cross:before,
+.cross:after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 60px;
+    background: red;
+    border-radius: 10px;
+}
+
+.cross:before {
+    transform: rotate(45deg);
+}
+
+.cross:after {
+    transform: rotate(-45deg);
+}
+
+
+/* css code voor de footer */
 footer {
     background-color: white;
-    margin-top: 1em;
-    padding: 2em 0 .2em 0;
+    margin-top: .5em;
+    padding: 1.5em 0 1em 0;
 }
 
 footer p {
     text-align: center;
 }
+
+/* Code voor de 404 status page */
+h5 {
+    font-size: 4em;
+    position: relative;
+    transform: translate(45%, 300%);
+}
+
+h6 {
+    font-size: 3em;
+    position: relative;
+    transform: translate(27%, 400%);
+}
+
+
+/* media queries voor laptops (min widths) */
+
+@media only screen and (min-width: 1000px) {
+    header section img {
+      width: 20%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    nav {
+        justify-content: right;
+    }
+    nav img {
+        width: 2%;
+        height: auto;
+        justify-content: right;
+    }
+  }

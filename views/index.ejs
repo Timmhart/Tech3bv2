@@ -4,31 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feature</title>
-    <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <header>
         <section>
-            <img src="../public/images/logowarzone.png" alt="Logo warzone">
-            <a href="#"><img src="../public/images/profileicon.png" alt=""></a>
+            <img src="/images/logowarzone.png" alt="Logo warzone">
+            <h2>Matchmaking</h2>
         </section>
     </header>
  <main>
+     <nav>
+            <img src="/images/profileicon.png" alt="Icon for profile">
+            <img src="/images/gesprek.png" alt="Icon for messages">
+            <img src="/images/favs.png" alt="Icon for faves">
+    </nav>
     <h1>Let's find your teammate!</h1>
+    
+  
+        <h3><%= spelernaam %></h3>
+        <p>Hier komt de persoon + info</p>
 
-
-    <p>Hier komt de persoon + info</p>
+            <section>
+                <p>K/D: <%= kd %></p>
+                <p>Wins: <%= wins %></p>
+                <p>Avg. score: <%= score %></p>
+            </section>
+   
 
     <section>
-        <p>K/D: 2.11</p>
-        <p>Wins: 211</p>
-        <p>Avg. score: 1250</p>
-    </section>
-
-    <section>
-        <img src="../public/images/like.png" alt="Button to like">
-        <img src="../public/images/star.png" alt="Button to star">
-        <img src="../public/images/unlike.png" alt="Button to unlike">
+        <a href=""><div class="heart"></div></a>
+        <a href=""><div class="cross"></div></a>
+        <!-- <img src="/images/like.png" alt="Button to like"> -->
+        <!-- <img src="/images/unlike.png" alt="Button to unlike"> -->
     </section>
 
 </main>

@@ -3,23 +3,24 @@ const ejs = require('ejs');
 const app = express();
 const port = 3000;
 
-
-// app.use('/css', express.static(__dirname + 'public/css'));
-// app.use('/js', express.static(__dirname + 'public/js'));
-// app.use('/images', express.static(__dirname + 'public/images'));
+app.use(express.static('public'));
 
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-    res.render('index');
+    res.render('index', {
+        spelernaam: 'Killerty333', kd: '1.87', wins: '98', score: '1233'
+    });
 });
 
 
 app.use(function (req, res, next) {
-    res.status(404).send("Sorry can't find that!")
+    res.status(404).render('404', {
+        title: 'Feature Project Tech'
+    });
 })
 
-app.use(express.static('public'));
+
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}!`);
