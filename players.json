@@ -1,0 +1,9 @@
+[
+    { "id": "Player1", "name": "Floki123", "kd": 1.2, "wins": 13, "score": 800},
+    { "id": "Player2", "name": "Destroyer2", "kd": 2.1, "wins": 180, "score": 1600},
+    { "id": "Player3", "name": "DibbesJr", "kd": 2, "wins": 125, "score": 1300},
+    { "id": "Player4", "name": "Lead", "kd": 1.55, "wins": 67, "score": 1000}, 
+    { "id": "Player5", "name": "4us", "kd": 1.02, "wins": 12, "score": 300},
+    { "id": "Player6", "name": "dss", "kd": 1.12, "wins": 43, "score": 600},
+    { "id": "Player7", "name": "Giggity", "kd": 1.22, "wins": 22, "score": 500}
+]

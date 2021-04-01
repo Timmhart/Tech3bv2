@@ -1,7 +1,10 @@
 const express = require('express');
 const ejs = require('ejs');
 const app = express();
+const dotenv = require('dotenv').config();
 const port = 3000;
+
+console.log(process.env.TESTVAR);
 
 app.use(express.static('public'));
 
@@ -9,7 +12,7 @@ app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
     res.render('index', {
-        spelernaam: 'Killerty333', kd: '1.87', wins: '98', score: '1233'
+        title: 'feature'
     });
 });
 

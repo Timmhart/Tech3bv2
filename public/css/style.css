@@ -105,84 +105,8 @@ main section p {
     border: none;
 }
 
-main section img {
-    width: 17%;
-    height: auto;
-    margin: 1em 0;
-    border-radius: 50%;
-    box-shadow: 0px 0px 19px 7px rgba(0,0,0,0.34);
-    padding: .5em;
-}
-
 main section:nth-of-type(2) {
     margin: 0 5em;
-}
-
-/* css code voor het hartje */
-
-.heart {
-    position: relative;
-    margin: 20px;
-    height: 65px;
-    width: 50px;
-}
-
-.heart:before,
-.heart:after {
-    position: absolute;
-    content: "";
-    width: 25px;
-    height: 40px;
-    background: green;
-    border-radius: 50px 50px 0 0;
-    margin-top: .5em;
-}
-
-.heart:before {
-left: 25px;
-
--webkit-transform: rotate(-45deg);;
-transform: rotate(-45deg);
-
-transform-origin: 0 100%;
--webkit-transform-origin: 0 100%;;
-}
-
-.heart:after {
-    left: 0;
-
-    -webkit-transform: rotate(45deg);;
-    transform: rotate(45deg);
-
-    -webkit-transform-origin: 100% 100%;
-    transform-origin: 100% 100%;
-}
-
-/* css code voor de kruis */
-
-.cross {
-    position: relative;
-    margin: 20px 20px 20px 160px;
-    height: 85px;
-    width: 100px;
-}
-
-.cross:before,
-.cross:after {
-    position: absolute;
-    content: "";
-    width: 10px;
-    height: 60px;
-    background: red;
-    border-radius: 10px;
-}
-
-.cross:before {
-    transform: rotate(45deg);
-}
-
-.cross:after {
-    transform: rotate(-45deg);
 }
 
 
