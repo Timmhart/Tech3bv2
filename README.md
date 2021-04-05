@@ -50,7 +50,8 @@ npm start
 
 ## Features
 
-De main feature is het samenbrengen van gamers. Voor meer features, bekijk [Project Tech wiki](https://github.com/Timmhart/Tech3bv2/wiki/ProjectTech) voor meer informatie.
+Binnen de applicatie kunnen gebruikers filteren op verschillende stats, namelijk k/d ratio, wins en score. Hiermee is kunnen ze 
+spelers vinden naar eigen behoefte. Voor meer features zie de [wiki](https://github.com/Timmhart/Tech3bv2/wiki/Concept)
 
 ## License
 
