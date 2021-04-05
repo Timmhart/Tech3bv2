@@ -1,8 +1,10 @@
-const winsSection = document.getElementsByClassName('winsSection');
-const scoreSection = document.getElementsByClassName('scoreSection');
-const kdSend = document.getElementsByClassName('kdSend');
-const winsSend = document.getElementsByClassName('winsSend');
+// const profilePicture = document.querySelector('playerImg');
+// const profilePictures = ['../images/alex.jpeg', '../images/alice.jpeg', '../images/charly.jpeg', '../images/d-day.jpeg', '../images/domino.jpeg',
+// '../images/farah.jpeg', '../images/ghost.jpeg', '../images/mara.jpeg', '../images/morte.jpeg', '../images/price.jpeg'];
 
-function kdSend(){
-    console.log(send)
-}
+// function randomProfile(profilePictures) {
+//     profilePicture = Math.floor(Math.random() * profilePictures.length);
+// };
+
+// console.log(profilePicture)
+    

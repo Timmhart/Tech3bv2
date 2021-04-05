@@ -4,17 +4,19 @@
     <%- include('partials/header'); -%>
 
     <section class="playerOverview">
-        <ul>
-            <h6><%= players.name %></h6>
-            <p><%= players.kd %></p>
-            <p><%= players.wins %></p>
-            <p><%= players.score %></p>
-            <a href="/filter/players/<%= players.id %>"></a>
-        </ul>
-
-        
-
-        
+        <%  players.forEach(function(player){ %>
+            
+                <h4><%= player.name %></h4>
+                    <section class="detailsSection">
+                        <p>kd: <%= player.kd %></p>
+                        <p>wins: <%= player.wins %></p>
+                        <p>score: <%= player.score %></p>
+                    </section>
+                <a href="/add/players/<%= player.id %>">Klik hier</a>
+          
+        <% }) %>
     </section>
 
+
+    <script src="../js/feature.js"></script>
 </body>

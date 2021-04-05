@@ -34,30 +34,33 @@ app.set('view engine', 'ejs');
 
 
 app.get('/', (req, res) => {
-    res.render('index', {
-        title: 'feature'
-    });
+    res.render('index', {title: 'feature'});
 });
 
-app.get('/filter', (req, res) => {
-    res.render('filter', {
-        title: 'feature'
-    });
+app.get('/add', (req, res) => {
+    res.render('addStats', {title: 'feature'});
 });
 
-app.get('/filter/players', async (req, res) => {
+app.post('/add', (req, res) => {
+    const id = slug(req.body.name);
+    const player = {id: id, name: req.body.name, kd: req.body.kd, wins: req.body.wins, score: req.body.score};
+    // players.push(player);
+    res.render('playerdetails', {title: "TEST", player});
+});
+
+app.get('/add/players', async (req, res) => {
     let players = {}
     // look for all the players in the database and sort them by name in an array
-    players = await db.collection('players').find({}, {sort: {name: -1, kd: 1}}).toArray();
+    players = await db.collection('players').find({}, {sort: {name: 1, kd: -1}}).toArray();
     res.render('players', {
         title: 'feature', players
     });
 });
 
-app.get('/filter/players/:playerId', async (req, res) => {
-   const player = await db.collection('players').findOne({ id: req.params.playerId});
-    res.render('playerdetails', {title: 'Player details', players});
-});
+// app.get('/add/players/:playerId', async (req, res) => {
+//    const player = await db.collection('players').findOne({ id: req.params.playerId});
+//     res.render('playersdetails', {title: 'Player details', players});
+// });
 
 
 
