@@ -5,15 +5,15 @@
 
     <section class="playerOverview">
         <%  players.forEach(function(player){ %>
-            
+            <section class="playerCards">
                 <h4><%= player.name %></h4>
                     <section class="detailsSection">
                         <p>kd: <%= player.kd %></p>
                         <p>wins: <%= player.wins %></p>
                         <p>score: <%= player.score %></p>
                     </section>
-                <a href="/add/players/<%= player.id %>">Klik hier</a>
-          
+                <a href="/add/players/<%= player.id %>">Match</a>
+            </section>
         <% }) %>
     </section>
 

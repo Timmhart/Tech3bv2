@@ -115,21 +115,32 @@ button {
 
 /* css voor de playeroverview page  */
 
-.playerOverview {
+.playerCards {
     display: flex;
     flex-direction: column;
     text-align: center;
+    background-color: rgb(224, 217, 217);
+    margin: .5em 0;
+    padding-bottom: 1.5em;
 }
 
-.playerOverview>h4 {
+.playerCards>h4 {
     margin: .5em 0;
     font-size: 2.5em;
 }
 
-/* .playerOverview>section {
+.playerCards>a {
+    color: white;
+    background-color: rgb(25, 68, 25);
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: .2em;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+}
 
-    margin-bottom: .3em;
-} */
 
 
 /* css van de playerdetail pagina  */
