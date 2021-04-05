@@ -9,7 +9,36 @@ body {
     color: rgb(25, 68, 25);
 }
 
-/* code nav + header  */
+/* Alle code voor de landingspagina  */
+.sectionStart {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5em;
+}
+
+img.imgStart {
+    margin-left: 6em;
+    margin-right: 6em;
+    margin-top: 3em;
+    width: 50%;
+    height: auto;
+}
+
+.startLink {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(25, 68, 25);
+    border-radius: 10px;
+    padding: .8em;
+    width: 50%;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* code header  */
 
 header {
     box-shadow: 3px 6px 30px -12px rgba(0,0,0,0.25);
@@ -35,82 +64,64 @@ header section img {
     padding-top: .9em;
 }
 
-header section a img {
-    width: 40%;
-    height: auto;
-    padding: .5em;
-    margin: 1em 0 0 1.5em;
-    border: 3px solid lightgrey;
-    border-radius: 50%;
-}
 
-header h2 {
-    position: relative;
-    transform: rotate(-5deg) translate(-60%, 65%);
-    font-size: 2em;
-    text-transform: uppercase;
-}
-
+/* alles in de main  */
 main {
     background-color: white;
     margin-top: 1em;
 }
 
-nav {
-    background-color: white;
-    margin-bottom: .7em;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-bottom: 4px solid lightgrey;
-    border-top: 4px solid lightgrey;
-}
 
-nav img {
-    width: 10%;
-    height: 7vh;
-    margin: 1em 2em 1em 2em;
-}
-
-
-/* alles in de main  */
 h1 {
-font-size: 1.5em;
-text-align: center;
-text-transform: uppercase;
-}
-
-h3 {
-    padding: 1em 0 0 1.5em;
-}
-
-main p {
-    border: 1px solid black;
-    padding: 4em;
+    font-size: 1.5em;
     text-align: center;
-    margin: 1em 2em 0 2em;
-    padding-bottom: 6em;
-    border-radius: 3em;
+    text-transform: uppercase;
+    padding-top: 1em;
 }
 
 main section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
 }
 
-main section p {
-    padding: 0;
-    margin: 1em 3em;
+
+
+label {
+    font-weight: 700;
+    text-align: center;
+    margin: 2em 0 0 0;
+}
+
+select {
+    width: 50%;
+    margin: 2em auto;
+    padding: .5em 1em;
+}
+
+a,button {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    background-color: darkgreen;
     border: none;
+    border-radius: 10px;
+    padding: .3em .3em;
+    text-align: center;
 }
 
-main section:nth-of-type(2) {
-    margin: 0 5em;
-}
 
 
-/* css code voor de footer */
+
+
+
+
+
+
+
+
+/* css code voor de footer van alle pagina's */
 footer {
     background-color: white;
     margin-top: .5em;

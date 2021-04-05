@@ -1,0 +1,20 @@
+<%- include('partials/head'); -%>
+
+<body>
+    <%- include('partials/header'); -%>
+
+    <section class="playerOverview">
+        <ul>
+            <h6><%= players.name %></h6>
+            <p><%= players.kd %></p>
+            <p><%= players.wins %></p>
+            <p><%= players.score %></p>
+            <a href="/filter/players/<%= players.id %>"></a>
+        </ul>
+
+        
+
+        
+    </section>
+
+</body>

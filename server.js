@@ -32,11 +32,34 @@ app.use(bodyParser.urlencoded({ extended: false}));
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
 
+
 app.get('/', (req, res) => {
     res.render('index', {
         title: 'feature'
     });
 });
+
+app.get('/filter', (req, res) => {
+    res.render('filter', {
+        title: 'feature'
+    });
+});
+
+app.get('/filter/players', async (req, res) => {
+    let players = {}
+    // look for all the players in the database and sort them by name in an array
+    players = await db.collection('players').find({}, {sort: {name: -1, kd: 1}}).toArray();
+    res.render('players', {
+        title: 'feature', players
+    });
+});
+
+app.get('/filter/players/:playerId', async (req, res) => {
+   const player = await db.collection('players').findOne({ id: req.params.playerId});
+    res.render('playerdetails', {title: 'Player details', players});
+});
+
+
 
 
 app.use(function (req, res, next) {
