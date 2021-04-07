@@ -67,7 +67,7 @@ app.get('/add/players/:playerId', async (req, res) => {
 
 
 
-app.use(function (req, res, next) {
+app.use( (req, res, next) => {
     res.status(404).render('404', {
         title: 'Feature Project Tech'
     });

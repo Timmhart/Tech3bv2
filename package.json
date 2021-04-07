@@ -25,14 +25,14 @@
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
     "heroku": "^7.51.0",
-    "lodash": "^4.17.20",
-    "mongodb": "^3.6.5",
+    "lodash": "^4.17.21",
+    "mongodb": "^3.6.6",
     "slug": "^4.0.3"
   },
   "devDependencies": {
-    "eslint": "^7.21.0",
+    "eslint": "^7.23.0",
     "eslint-config-p5js": "^1.1.0",
-    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react": "^7.23.1",
     "nodemon": "^2.0.7"
   }
 }
