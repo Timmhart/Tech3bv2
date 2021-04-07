@@ -5,7 +5,7 @@ const slug = require('slug');
 const app = express();
 const dotenv = require('dotenv').config();
 const { MongoClient } = require('mongodb');
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
 
 let db = null;
 // function connectDB
@@ -43,7 +43,10 @@ app.get('/add', (req, res) => {
 
 app.post('/add', (req, res) => {
     const id = slug(req.body.name);
-    const player = {id: id, name: req.body.name, kd: req.body.kd, wins: req.body.wins, score: req.body.score};
+    const player = {id: id, name: req.body.name, kd: req.body.kd, wins: req.body.wins, score: req.body.score, aname: req.body.aname};
+    db.collection('players').insertOne(player, function(err, result){
+        console.log('New player inserted');
+    })
     res.render('playerdetails', {title: 'feature', player});
 });
 
@@ -56,10 +59,10 @@ app.get('/add/players', async (req, res) => {
     });
 });
 
-// app.get('/add/players/:playerId', async (req, res) => {
-//    const player = await db.collection('players').findOne({ id: req.params.playerId});
-//     res.render('playersdetails', {title: 'Player details', players});
-// });
+app.get('/add/players/:playerId', async (req, res) => {
+    player = await db.collection('players').findOne({ name: req.params.playerId});
+    res.render('playersdetails', {title: 'Player details', player});
+});
 
 
 

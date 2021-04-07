@@ -12,11 +12,12 @@
                         <p>wins: <%= player.wins %></p>
                         <p>score: <%= player.score %></p>
                     </section>
-                <a href="/add/players/<%= player.id %>">Match</a>
+                <a href="/add/players/<%= player.name %>">Match</a>
             </section>
         <% }) %>
     </section>
 
 
     <script src="../js/feature.js"></script>
+    <%- include('partials/footer'); -%>
 </body>
