@@ -13,6 +13,7 @@ body {
 #menu {
     margin: 1em 0 0 1em;
     font-size: 1.5em;
+    cursor: pointer;
 }
 
 .hamburgerMenu {
@@ -44,6 +45,7 @@ body {
     left: 0;
     transform: translate(0, 27%);
 }
+
 
 header {
     box-shadow: 3px 6px 30px -12px rgba(0,0,0,0.25);
@@ -157,10 +159,15 @@ button {
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: rgb(224, 217, 217);
+    background-color: rgb(91 144 127);
     margin: .5em 0;
     padding-bottom: 1.5em;
     margin-top: 1.5em;
+    border-radius: 10px;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 5px 5px 5px -3px #000000
 }
 
 .playerCards>h4 {
@@ -178,6 +185,7 @@ button {
     text-decoration: none;
     font-weight: 700;
     text-transform: uppercase;
+    border-radius: 10px;
 }
 /* einde  playerOverview page  */
 
