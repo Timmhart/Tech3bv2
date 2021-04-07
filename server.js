@@ -44,7 +44,6 @@ app.get('/add', (req, res) => {
 app.post('/add', (req, res) => {
     const id = slug(req.body.name);
     const player = {id: id, name: req.body.name, kd: req.body.kd, wins: req.body.wins, score: req.body.score};
-    // players.push(player);
     res.render('playerdetails', {title: 'feature', player});
 });
 

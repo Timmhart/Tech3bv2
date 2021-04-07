@@ -24,6 +24,7 @@
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
+    "heroku": "^7.51.0",
     "lodash": "^4.17.20",
     "mongodb": "^3.6.5",
     "slug": "^4.0.3"
