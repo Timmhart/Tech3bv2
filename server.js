@@ -7,7 +7,7 @@ const dotenv = require('dotenv').config();
 const { MongoClient } = require('mongodb');
 const port = process.env.PORT || 4000;
 
-let db = null;
+let db = '';
 // function connectDB
 async function connectDB () {
     // get URI from .env file
