@@ -1,3 +1,4 @@
+
 const hamburgerMenu = document.querySelector('#menu');
 
 function onClickMenu() {
