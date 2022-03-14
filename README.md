@@ -13,7 +13,7 @@
 * [License](https://github.com/Timmhart/Tech3bv2#license)
 * [Bronnen](https://github.com/Timmhart/Tech3bv2#bronnen)
 
-## Hoe te installeren
+## Hoe te installeren 
 
 ### Installatie
 
