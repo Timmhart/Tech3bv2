@@ -23,7 +23,7 @@ git clone https://github.com/Timmhart/Tech3bv2.git
 ```
 Stap 2. Navigeer naar de zojuist geclonde reposotiry *Let op hoofdlettergevoelig*
 ```js
-cd blokTech/
+cd Tech3bv2/
 ```
 Stap 3. Installeer de npm (Node package manager)
 ```js
